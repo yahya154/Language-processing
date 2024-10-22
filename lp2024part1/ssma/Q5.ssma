@@ -1,0 +1,33 @@
+	push To Be
+	load
+	push ToBe
+	store
+	push , or not 
+	load
+	push ornot
+	store
+LOAD tobe
+	push 3
+	sysc
+LOAD ornot
+	push 3
+	sysc
+LOAD tobe
+	push ornot
+	store
+LOAD ornot
+	push 3
+	sysc
+	push ?
+	load
+	push 3
+	sysc
+	push 2
+	sysc
+	halt
+.data
+ornot:0
+ToBe:0
+To Be:0
+, or not :0
+?:0

@@ -1,0 +1,54 @@
+	push 6
+	push x
+	store
+$loop_start_0:
+	push x
+	load
+	push $loop_end_1
+	jump_z 
+	push x
+	load
+	push 3
+	sysc
+	push y
+	load
+	push x
+	load
+	add 
+	push y
+	store
+	push x
+	load
+	push 1
+	sub 
+	push x
+	store
+	push $loop_start_0
+	jump 
+$loop_end_1:
+	push 2
+	sysc
+$loop_start_2:
+	push y
+	load
+	push $loop_end_3
+	jump_z 
+	push y
+	load
+	push 3
+	sysc
+	push 2
+	sysc
+	push y
+	load
+	push 7
+	div 
+	push y
+	store
+	push $loop_start_2
+	jump 
+$loop_end_3:
+	halt
+.data
+x:0
+y:0

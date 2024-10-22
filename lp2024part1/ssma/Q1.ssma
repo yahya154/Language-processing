@@ -1,0 +1,20 @@
+	push 5
+	push 3
+	push 9
+	mul 
+	add 
+	push 3
+	sysc
+	push 2
+	sysc
+	push 9
+	push 5
+	push 3
+	add 
+	mul 
+	push 3
+	sysc
+	push 2
+	sysc
+	halt
+.data
